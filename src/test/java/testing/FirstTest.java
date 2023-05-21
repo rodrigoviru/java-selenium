@@ -41,10 +41,10 @@ public class FirstTest {
 		driver.findElement(loginLocatorbutton).click();
 		if (driver.findElement(verifyregisterLocator).isDisplayed()) {
 			driver.findElement(username).sendKeys("rodrigo.testing.java@gmail.com");
-			driver.findElement(password).sendKeys("Montevideo47");
-			driver.findElement(login).click();
-			Thread.sleep(12000);
-			assertTrue(driver.findElement(logueado).isDisplayed());
+			driver.findElement(password).sendKeys("PASS");
+			driver.findElement(login).click(); // the pass is disabled to protect own data.
+			Thread.sleep(12000); //
+			assertTrue(driver.findElement(logueado).isDisplayed()); //
 			
 		}
 		else
